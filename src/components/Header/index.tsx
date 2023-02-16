@@ -1,4 +1,4 @@
-import { ContainerHeader, Location, MapPinIcon } from "./styles"
+import { ContainerHeader, ContainerBody, Location, MapPinIcon, CartContainer, ShoppingCartIconStyled } from "./styles"
 import LogoPng from "../../assets/logo.png"
 
 
@@ -7,11 +7,15 @@ export function Header() {
     <ContainerHeader>
       <img src={LogoPng} alt="Coffee Delivery" />
 
-      <div>
+      <ContainerBody>
         <Location>
           <MapPinIcon /> Londrina, PR
         </Location>
-      </div>
+
+        <CartContainer>
+          <ShoppingCartIconStyled />
+        </CartContainer>
+      </ContainerBody>
     </ContainerHeader>
   );
 }
