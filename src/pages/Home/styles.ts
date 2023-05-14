@@ -75,3 +75,22 @@ export const TitleFunctionality = styled.span`
   font-weight: 400;
   line-height: 130%;
 `;
+
+export const SectionCoffees = styled.div``;
+
+export const CoffeeTitle = styled.h2`
+  color: ${({ theme }) => theme['base-subtitle']};
+  font-size: 2rem;
+  font-family: 'Baloo 2', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  margin: 32px 0;
+`;
+
+export const ContainerCardsCoffee = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 32px;
+`;
+
